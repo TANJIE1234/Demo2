@@ -11,6 +11,10 @@
     <title>helloworld</title>
   </head>
   <body>
-<%="你想干啥"  %>
+<form action="sign_up.jsp" method="post">
+  用户名：<input type="text" name="username"><br>
+  密码：   <input type="password" name="password"><br>
+  <input type="submit" value="注册">
+</form>
   </body>
 </html>
