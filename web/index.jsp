@@ -11,6 +11,6 @@
     <title>helloworld</title>
   </head>
   <body>
-嘿嘿哈高科接受对方立刻
+<%="你想干啥"  %>
   </body>
 </html>
