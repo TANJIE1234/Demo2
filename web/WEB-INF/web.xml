@@ -3,4 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>  //地址映射
+        <servlet-name>login</servlet-name>//我们定义的servlet应用名字
+        <url-pattern>/LoginServlet</url-pattern>//地址名
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>regist</servlet-name>
+        <servlet-class>servlet.RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>  //地址映射
+        <servlet-name>regist</servlet-name>//我们定义的servlet应用名字
+        <url-pattern>/RegistServlet</url-pattern>//地址名
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>verifyCode</servlet-name>
+        <servlet-class>servlet.VerifyCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>  //地址映射
+        <servlet-name>verifyCode</servlet-name>//我们定义的servlet应用名字
+        <url-pattern>/VerifyCodeServlet</url-pattern>//地址名
+    </servlet-mapping>
 </web-app>
